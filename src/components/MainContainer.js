@@ -6,14 +6,13 @@ import RowContainer from "./RowContainer";
 import { useStateValue } from "../context/StateProvider";
 import { useRef } from "react";
 import { useEffect } from "react";
+import MenuContainer from "./MenuContainer";
 
 const MainContainer = () => {
   const [{ foodItems }, dispatch] = useStateValue();
-  const [scrollValue, setScrollValue] = useState(0)
-  
-useEffect(()=> {
+  const [scrollValue, setScrollValue] = useState(0);
 
-},[scrollValue])
+  useEffect(() => {}, [scrollValue]);
 
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
@@ -27,22 +26,28 @@ useEffect(()=> {
           <div className="hidden md:flex gap-3 items-center">
             <motion.div
               whileTap={{ scale: 0.75 }}
-              onClick={()=> setScrollValue(-200)}
+              onClick={() => setScrollValue(-200)}
               className="w-8 h-8 rounded-lg bg-orange-300 hover:bg-orange-500 cursor-pointer transition-all duration-100 ease-in-out hover:shadow-lg flex items-center justify-center"
             >
               <MdChevronLeft className="text-lg text-white" />
             </motion.div>
             <motion.div
               whileTap={{ scale: 0.75 }}
-              onClick={()=> setScrollValue(200)}
+              onClick={() => setScrollValue(200)}
               className="w-8 h-8 rounded-lg bg-orange-300 hover:bg-orange-500 cursor-pointer transition-all duration-100 ease-in-out hover:shadow-lg flex items-center justify-center"
             >
               <MdChevronRight className="text-lg text-white" />
             </motion.div>
           </div>
         </div>
-        <RowContainer scrollValue={scrollValue} flag={true} data={foodItems?.filter(item => item.category === "fruits")} />
+        <RowContainer
+          scrollValue={scrollValue}
+          flag={true}
+          data={foodItems?.filter((item) => item.category === "fruits")}
+        />
       </section>
+
+      <MenuContainer />
     </div>
   );
 };
