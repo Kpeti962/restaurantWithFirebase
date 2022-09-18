@@ -45,20 +45,29 @@ const HomeContainer = () => {
           alt="hero-bg"
         />
         <div className="lg:px-32 w-full h-full absolute py-4 top-0 left-0 flex items-center justify-center gap-4 flex-wrap">
-          {heroData && heroData.map(n => (
-            <div key={n.id} className="drop-shadow-lg lg:w-190 p-4 flex flex-col items-center justify-center bg-cardOverlay rounded-3xl backdrop-blur-md rounded-md">
-            <img src={n.imageSrc} className="w-20 -mt-10 lg:w-40 lg:-mt-20" alt="I1" />
-            <p className="text-base lg:text-xl font-semibold mt-2 text-textColor lg:mt-4">
-              {n.name}
-            </p>
-            <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold lg:my-3 my-1">
-              {n.description}
-            </p>
-            <p className="text-sm font-semibold text-headingColor">
-              <span className="text-xs text-red-600">$</span>{n.price}
-            </p>
-          </div>
-          ))}
+          {heroData &&
+            heroData.map((n) => (
+              <div
+                key={n.id}
+                className="drop-shadow-lg lg:w-190 p-4 flex flex-col items-center justify-center bg-cardOverlay rounded-3xl backdrop-blur-md"
+              >
+                <img
+                  src={n.imageSrc}
+                  className="w-20 -mt-10 lg:w-40 lg:-mt-20"
+                  alt="I1"
+                />
+                <p className="text-base lg:text-xl font-semibold mt-2 text-textColor lg:mt-4">
+                  {n.name}
+                </p>
+                <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold lg:my-3 my-1">
+                  {n.description}
+                </p>
+                <p className="text-sm font-semibold text-headingColor">
+                  <span className="text-xs text-red-600">$</span>
+                  {n.price}
+                </p>
+              </div>
+            ))}
         </div>
       </div>
     </section>
