@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/restaurantWithFirebase/static/css/main.4acc784a.css",
-    "main.js": "/restaurantWithFirebase/static/js/main.d10a2250.js",
+    "main.css": "/restaurantWithFirebase/static/css/main.6fcd91dd.css",
+    "main.js": "/restaurantWithFirebase/static/js/main.c8c98e5a.js",
     "static/media/c3.png": "/restaurantWithFirebase/static/media/c3.55f83414f33f66456b35.png",
     "static/media/fi1.png": "/restaurantWithFirebase/static/media/fi1.3f43e51b6058550d1f44.png",
     "static/media/logo.png": "/restaurantWithFirebase/static/media/logo.0f99324454e3c3ccba98.png",
@@ -10,13 +10,14 @@
     "static/media/heroBg.png": "/restaurantWithFirebase/static/media/heroBg.c43c4862422e70d88698.png",
     "static/media/delivery.png": "/restaurantWithFirebase/static/media/delivery.bf9130a0962fbe091abc.png",
     "static/media/avatar.png": "/restaurantWithFirebase/static/media/avatar.68cdc4513e601d28a382.png",
+    "static/media/emptyCart.svg": "/restaurantWithFirebase/static/media/emptyCart.71ad17e692d71caa77c6c9351f84756b.svg",
     "static/media/NotFound.svg": "/restaurantWithFirebase/static/media/NotFound.4e90bb93460bfd8d9e2c86b42ef91a4a.svg",
     "index.html": "/restaurantWithFirebase/index.html",
-    "main.4acc784a.css.map": "/restaurantWithFirebase/static/css/main.4acc784a.css.map",
-    "main.d10a2250.js.map": "/restaurantWithFirebase/static/js/main.d10a2250.js.map"
+    "main.6fcd91dd.css.map": "/restaurantWithFirebase/static/css/main.6fcd91dd.css.map",
+    "main.c8c98e5a.js.map": "/restaurantWithFirebase/static/js/main.c8c98e5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4acc784a.css",
-    "static/js/main.d10a2250.js"
+    "static/css/main.6fcd91dd.css",
+    "static/js/main.c8c98e5a.js"
   ]
 }
