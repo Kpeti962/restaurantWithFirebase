@@ -76,7 +76,7 @@ const CartItem = ({ item, flag, setFlag }) => {
           <BiMinus className="text-gray-50" />
         </motion.div>
         <p className="w-5 h-5 rounded-sm bg-cartBg text-gray-50 flex items-center justify-center">
-          {qty}Ö
+          {qty}
         </p>
         <motion.div
           onClick={() => updateQty("add", item?.id)}

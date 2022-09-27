@@ -28,7 +28,7 @@ const CartContainer = () => {
 
   const clearCart = () => {
     dispatch({
-      type: actionType.SET_CARTITEMS,
+      type: actionType.SET_CART_ITEMS,
       cartItems: [],
     });
 
