@@ -67,7 +67,7 @@ const Header = () => {
             <Link to={"/"}><li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Home
             </li></Link>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+         {/*    <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Menu
             </li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
@@ -75,7 +75,7 @@ const Header = () => {
             </li>
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Service
-            </li>
+            </li> */}
           </motion.ul>
           <div onClick={showCart} className="relative flex items-center justify-center">
             <MdShoppingBasket className="text-textColor text-2xl ml-8 cursor-pointer" />
